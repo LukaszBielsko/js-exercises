@@ -1,0 +1,61 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 200px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    border-bottom-left-radius: 20px;
+    font-size: 16px;
+    display: block
+}
+
+#add-post-text {
+    width: 400px;
+}
+
+#add-post-author {
+    width: 250px;
+}
+
+#question {
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+    width: 400px;
+    border-bottom-left-radius: 20px;
+}
+
+.posts-container {
+    margin-top: 50px;
+}
+
+.post {
+    width: 400px;
+    border-top: 3px solid black;
+    margin-top: 15px;
+    padding: 10px;
+    /* border-top-right-radius: 10%; */
+}
+
+.author-span {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.title-span {
+    font-size: 22px;
+}
+
+.highlight {
+    transition: background-color 1s linear;
+    background-color: rgb(138, 148, 148);
+}
+
+.no-highlight {
+    background-color: transparent
+}

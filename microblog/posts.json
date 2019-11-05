@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "id": "1572795927077",
+      "title": "Hello",
+      "author": "Nick",
+      "text": "This is my first article and I am very happy. Yey!",
+      "points": 30
+    },
+    {
+      "id": "1572795948219",
+      "title": "About my life",
+      "author": "Mike",
+      "text": "Live is very good lately. Yey!",
+      "points": 20
+    },
+    {
+      "id": "1572795956859",
+      "title": "My new blog",
+      "author": "Connor",
+      "text": "Check out my blog here - www.myblog.com. Yey!",
+      "points": 45
+    }
+  ]
+}
