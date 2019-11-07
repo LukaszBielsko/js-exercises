@@ -3,6 +3,12 @@ const readline = require('readline');
 
 const argv = process.argv[2]
 
+if (!argv) {
+    console.log('\n*****\nPlease provide a file.\n*****\n')
+    console.log('Usage: node first_script.js YOUR_FILE_HERE\n\n')
+    return
+} 
+
 const readInterface = readline.createInterface({
     input: fs.createReadStream(argv),
     console: false
