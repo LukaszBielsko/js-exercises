@@ -20,7 +20,7 @@ const lines = []
 readInterface.on('line', function (line) { 
     lines.push(line)
 })
-.on('close', () => {
+.on('close', function(){
     // join lines into one string
     const wordsString = lines.join(' ')
     // split the sting into single words
@@ -34,12 +34,21 @@ readInterface.on('line', function (line) {
     // find unique words
     const uniqueWords = findUniqueWords(wordsOccurrence)
     // add new line char and write to file
-    fs.writeFile('./words_list.txt', uniqueWords.join('\n'), err => console.log(err) )
+    fs.writeFile(
+        './words_list.txt', 
+        uniqueWords.join('\n'), 
+        function (err) {
+            if (err) {
+                console.log(`Error: ${err}`)
+            } else {
+                console.log('Words list created.')
+            }
+        })
 })
 
 function wordCount(wordsArray) {
     const wordCount = {}
-    wordsArray.forEach((word) => {
+    wordsArray.forEach( function(word){
         wordCount[word] = wordCount[word] + 1 || 1
     })
     return wordCount
